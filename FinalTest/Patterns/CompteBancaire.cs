@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using FinalTest.Tests;
 
 namespace FinalTest.Patterns
 {
@@ -10,7 +9,7 @@ namespace FinalTest.Patterns
 
         public CompteBancaire(CompteCréé compteCréé)
         {
-            this._numCompte = compteCréé.NuméroDeCompte;
+            this._numCompte = compteCréé.NumDeCompte;
         }
 
         public static IEnumerable<IEvenementMetier> Ouvrir(string numéroDeCompte, int autorisationDeCrédit)

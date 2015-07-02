@@ -26,7 +26,7 @@ namespace FinalTest.LinQ
         {
             get
             {
-                return valeur.OrderBy(x => x.Value).Where(x => (x.Value % 2) != 0).Select(x => x.Key).Aggregate(String.Empty, (s, s1) => s + ", " + s1).Substring(2);
+                return valeur.OrderBy(x => x.Value).Where(x => (x.Value % 2) != 0).Select(x => x.Key).Aggregate((s, s1) => s + ", " + s1);
             }
             
         }
