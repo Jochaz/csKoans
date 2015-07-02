@@ -29,5 +29,10 @@ namespace FinalTest.LinQ
             }
             
         }
+
+        public string PremierNombreDontLeTexteContientPlusDe5Caractères
+        {
+            get { return valeur.Select(x => x.Key).First(x => x.Length > 5); }
+        }
     }
 }
