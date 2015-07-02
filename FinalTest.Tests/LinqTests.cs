@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FinalTest.LinQ;
 using NFluent;
 using NUnit.Framework;
 
@@ -39,14 +40,14 @@ namespace FinalTest.Tests
             };
         }
 
-        //[Test]
-        //public void RécupérerLesNombresPairs()
-        //{
-        //    var nombres = new Nombres(keyValuePairs);
-        //    var nombresPairs = nombres.NombresPairs; // getter seulement qui retourne un IEnumerable<int> en utilisant Linq (i.e sans utiliser de boucles) -> Where + Select
+        [Test]
+        public void RécupérerLesNombresPairs()
+        {
+            var nombres = new Nombres(keyValuePairs);
+            var nombresPairs = nombres.NombresPairs; // getter seulement qui retourne un IEnumerable<int> en utilisant Linq (i.e sans utiliser de boucles) -> Where + Select
 
-        //    Check.That(nombresPairs).ContainsExactly(4, 2, 8, 6);
-        //}
+            Check.That(nombresPairs).ContainsExactly(4, 2, 8, 6);
+        }
 
         //[Test]
         //public void RécupérerLesNombresPairsBis()

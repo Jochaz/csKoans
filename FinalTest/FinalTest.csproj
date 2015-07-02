@@ -43,9 +43,12 @@
     <Compile Include="Bases\IOperation.cs" />
     <Compile Include="Bases\Multiplication.cs" />
     <Compile Include="Bases\Somme.cs" />
+    <Compile Include="LinQ\Nombres.cs" />
     <Compile Include="Patterns\CompteBancaire.cs" />
     <Compile Include="Patterns\CompteCréé.cs" />
+    <Compile Include="Patterns\DépotRéalisé.cs" />
     <Compile Include="Patterns\IEvenementMetier.cs" />
+    <Compile Include="Patterns\Montant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bases\TypeReference.cs" />
     <Compile Include="Bases\TypeValeur.cs" />
