@@ -8,6 +8,7 @@ namespace FinalTest.Patterns
         private string _numCompte;
         private CompteCréé compteCréé;
         private DépotRéalisé dépotRéalisé;
+        private int balance;
 
         public CompteBancaire(CompteCréé compteCréé)
         {
@@ -20,6 +21,7 @@ namespace FinalTest.Patterns
             this.compteCréé = compteCréé;
             this.dépotRéalisé = dépotRéalisé;
             this._numCompte = compteCréé.NumDeCompte;
+            balance += dépotRéalisé.MontantDepot.UnMontant;
         }
 
         public static IEnumerable<IEvenementMetier> Ouvrir(string numéroDeCompte, int autorisationDeCrédit)
