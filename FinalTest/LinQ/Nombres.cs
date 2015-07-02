@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace FinalTest.LinQ
 {
@@ -33,6 +34,11 @@ namespace FinalTest.LinQ
         public string PremierNombreDontLeTexteContientPlusDe5Caractères
         {
             get { return valeur.Select(x => x.Key).First(x => x.Length > 5); }
+        }
+
+        public IEnumerable<int> QuatreNombresSupérieursSuivant3
+        {
+            get { return valeur.OrderBy(x => x.Value).Where(x => x.Value > 3).Select(x => x.Value).Take(4); }
         }
     }
 }
