@@ -2,7 +2,7 @@ using System;
 
 namespace FinalTest.Bases
 {
-    public class Multiplication
+    public class Multiplication: IOperation
     {
         public Boolean PeutCalculer(string p0)
         {

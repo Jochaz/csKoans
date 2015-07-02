@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace FinalTest.Tests
+﻿namespace FinalTest.Bases
 {
-    public class Somme
+    public class Somme: IOperation
     {
         public bool PeutCalculer(string p0)
         {
