@@ -20,5 +20,14 @@ namespace FinalTest.LinQ
                 return valeur.Where(x => (x.Value % 2) == 0).Select(x => x.Value);
             } 
         }
+
+        public string TexteNombresImpairs
+        {
+            get
+            {
+                return valeur.OrderBy(x => x.Value).Where(x => (x.Value % 2) != 0).Select(x => x.Key).Aggregate(String.Empty, (s, s1) => s + ", " + s1).Substring(2);
+            }
+            
+        }
     }
 }
